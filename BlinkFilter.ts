@@ -25,11 +25,11 @@ export class BlinkFilter extends PIXI.Filter {
 
     constructor(color:number = 0xFFFFFFFF) {
         super('', BlinkFilter.FRAGMENT_SRC);
-        this.rgba = color;
+        this.color = color;
     }
 
-    public set rgba(value:number) {
-        this._rgba = value;
+    public set color(rgba:number) {
+        this._rgba = rgba;
 
         let r:number = (this._rgba & 0xFF000000) >>> (4*6);
         let g:number = (this._rgba & 0x00FF0000) >>> (4*4);

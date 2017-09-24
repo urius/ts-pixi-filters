@@ -1,3 +1,6 @@
+/**
+ * BlinkFilter
+ */
 export class BlinkFilter extends PIXI.Filter {
     static readonly FRAGMENT_SRC:string = `
         precision mediump float;
